@@ -6,8 +6,23 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="jumbotron mb-4">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Página Inicial</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-4">
+        <div class="jumbotron">
             <h1 class="display-4">Procedimento de Sincronismo no Exchange</h1>
         </div>
         
@@ -40,5 +55,7 @@
             comandosGerados.textContent += comando + '\n';
         }
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw6s0eDlvoS9pY+9Uq9Cb9aR8fF8aCV1Gh+8jGv9Abw8U8s7rpSJAw6t8tk5Vx" crossorigin="anonymous"></script>
 </body>
 </html>
