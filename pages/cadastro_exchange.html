@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Procedimento de Sincronismo no Exchange</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron mb-4">
+            <h1 class="display-4">Procedimento de Sincronismo no Exchange</h1>
+        </div>
+        
+        <div class="mb-3">
+            <label for="nomeUsuario" class="form-label">Nome de Usuário:</label>
+            <input type="text" class="form-control" id="nomeUsuario" placeholder="Nome completo do usuário">
+        </div>
+
+        <div class="mb-3">
+            <label for="emailUsuario" class="form-label">E-mail do Usuário:</label>
+            <input type="text" class="form-control" id="emailUsuario" placeholder="Endereço de e-mail do usuário">
+        </div>
+
+        <button class="btn btn-primary" onclick="gerarComando()">Gerar Comando</button>
+
+        <div class="mt-4">
+            <h2>Comandos Gerados:</h2>
+            <pre id="comandosGerados"></pre>
+        </div>
+    </div>
+
+    <script>
+        function gerarComando() {
+            var nomeUsuario = document.getElementById('nomeUsuario').value;
+            var emailUsuario = document.getElementById('emailUsuario').value;
+
+            var comando = `Enable-RemoteMailbox "${nomeUsuario}" -RemoteRoutingAddress "${emailUsuario}"`;
+            
+            var comandosGerados = document.getElementById('comandosGerados');
+            comandosGerados.textContent += comando + '\n';
+        }
+    </script>
+</body>
+</html>
