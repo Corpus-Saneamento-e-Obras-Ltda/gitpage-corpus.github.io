@@ -39,7 +39,7 @@ body {
     position: relative;
     cursor: pointer;
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 0px;
     text-align: center;
 }
 
@@ -79,12 +79,31 @@ body {
     color: white;
     text-align: center;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 1px;
     font-size: 36px;
-    margin-bottom: 20px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+i {
+    padding-left: 3px;
 }
 
 .nav-pills li a:hover {
     background-color: rgb(39, 156, 74);
 }
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+  }
+  
+  #sidebar ul li.active > a,
+  a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+  }
+  
+  a[data-toggle="collapse"] {
+    position: relative;
+  }
+  
