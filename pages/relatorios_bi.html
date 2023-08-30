@@ -14,16 +14,16 @@
 <body>
 
     <div class="container-fluid">
-        <div class="row" id="div-cabecalho">
+        <div class="row " id="div-cabecalho">
             <div class="col">
-                <h1 class="title">Relatórios POWER-BI</h1>
+                <h1 class="title bg-success">Relatórios POWER-BI</h1>
             </div>
         </div>
         <div class="row" id="div-conteudo">
             <div class="col-3" id="div-menu">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="d-flex flex-column justify-content-between col-auto bg-dark min-vh-100">
+                        <div class="d-flex flex-column justify-content-between col-auto bg-success min-vh-100">
                             <div class="mt-4">
                                 <ul class="nav nav-pills flex-column mt-2 mt-sm-0" id="menu">
                                     <!-- Primeiro item Menu -->
@@ -35,15 +35,17 @@
                                             <i class="bi bi-chevron-right"></i>
                                         </a>
                                         <ul class="nav collapse ms-1 flex-column" id="sidemenu1">
-                                            <li class="nav-item">
-                                                <a class="nav-link text-white"
-                                                    href="https://app.powerbi.com/links/eMPDFxc1um?ctid=162df80e-5f1b-4975-91f6-120d43809237&pbi_source=linkShare"
-                                                    target="_blank" aria-expanded="true">DRE Gerencial
-                                                </a>
-                                            </li>
+                                            <ul class="submenu" style="list-style-type: none;">
+                                                <li class="nav-item">
+                                                    <a class="nav-link text-white"
+                                                        href="https://app.powerbi.com/links/eMPDFxc1um?ctid=162df80e-5f1b-4975-91f6-120d43809237&pbi_source=linkShare"
+                                                        target="_blank" aria-expanded="true">DRE Gerencial
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </ul>
                                     </li>
-            
+
                                     <!-- Segundo item menu -->
                                     <li class="nav-item my-sm-1 my-2">
                                         <a class="nav-link text-white text-center text-sm-start" href="#sidemenu2"
@@ -53,14 +55,16 @@
                                             <i class="bi bi-chevron-right"></i>
                                         </a>
                                         <ul class="nav collapse ms-1 flex-column" id="sidemenu2">
-                                            <li class="nav-item">
-                                                <a class="nav-link text-white"
-                                                    href="https://app.powerbi.com/links/rWcTmZCANe?ctid=162df80e-5f1b-4975-91f6-120d43809237&pbi_source=linkShare"
-                                                    target="_blank" aria-expanded="true">Quadro de Lotação</a>
-                                            </li>
+                                            <ul class="submenu " style="list-style-type: none;">
+                                                <li class="nav-item">
+                                                    <a class="nav-link text-white"
+                                                        href="https://app.powerbi.com/links/rWcTmZCANe?ctid=162df80e-5f1b-4975-91f6-120d43809237&pbi_source=linkShare"
+                                                        target="_blank" aria-expanded="true">Quadro de Lotação</a>
+                                                </li>
+                                            </ul>
                                         </ul>
                                     </li>
-            
+
                                     <!-- Terceiro item menu -->
                                     <li class="nav-item my-sm-1 my-2 disabled">
                                         <a class="nav-link text-white text-center text-sm-start" href="#sidemenu3"
@@ -70,33 +74,76 @@
                                             <i class="bi bi-chevron-right "></i>
                                         </a>
                                         <ul class="nav collapse ms-1 flex-column" id="sidemenu3">
-                                            <li class="nav-item">
-                                                <a class="nav-link text-white"
-                                                    href="https://app.powerbi.com/links/x8Lh112DbC?ctid=162df80e-5f1b-4975-91f6-120d43809237&pbi_source=linkShare"
-                                                    target="_blank" aria-expanded="true">Notas Emitidas</a>
-                                            </li>
-                                        </ul>
+                                            <ul class="submenu " style="list-style-type: none;">
+                                                <li class="nav-item">
+                                                    <a class="nav-link text-white"
+                                                        href="https://app.powerbi.com/links/x8Lh112DbC?ctid=162df80e-5f1b-4975-91f6-120d43809237&pbi_source=linkShare"
+                                                        target="_blank" aria-expanded="true">Notas Emitidas</a>
+                                            </ul>
                                     </li>
-            
-                                    <!-- Quarto item menu -->
-                                    <li class="nav-item my-sm-1 my-2 disabled">
-                                        <a class="nav-link text-white text-center text-sm-start" href="#sidemenu4"
-                                            data-bs-toggle="collapse">
-                                            <i class="fa fa-screwdriver-wrench"></i>
-                                            <span class="ms-2 d-none d-sm-inline">Manutenção</span>
-                                            <i class="bi bi-chevron-right"></i>
-                                        </a>
-                                        <ul class="nav collapse ms-1 flex-column" id="sidemenu4">
-                                            <li class="nav-item ">
-                                                <a class="nav-link text-white"
-                                                    href="https://app.powerbi.com/links/x8Lh112DbC?ctid=162df80e-5f1b-4975-91f6-120d43809237&pbi_source=linkShare"
-                                                    target="_blank" aria-expanded="true">Acompanhamento Manutenção</a>
-                                                <a class="nav-link text-white"
-                                                    href="https://app.powerbi.com/links/x8Lh112DbC?ctid=162df80e-5f1b-4975-91f6-120d43809237&pbi_source=linkShare"
-                                                    target="_blank" aria-expanded="true">Manutenção Central</a>
-                                            </li>
-                                        </ul>
-                                    </li>
+                                </ul>
+                                </li>
+
+                                <!-- Quarto item menu -->
+                                <li class="nav-item my-sm-1 my-2 disabled">
+                                    <a class="nav-link text-white text-center text-sm-start" href="#sidemenu4"
+                                        data-bs-toggle="collapse">
+                                        <i class="fa fa-screwdriver-wrench"></i>
+                                        <span class="ms-2 d-none d-sm-inline">Manutenção</span>
+                                        <i class="bi bi-chevron-right"></i>
+                                    </a>
+
+                                    <ul class="nav collapse ms-1 flex-column" id="sidemenu4">
+                                        <li class="nav-item">
+                                            <ul class="submenu " style="list-style-type: none;">
+                                                <li>
+                                                    <a class="nav-link text-white"
+                                                        href="https://app.powerbi.com/links/x8Lh112DbC?ctid=162df80e-5f1b-4975-91f6-120d43809237&pbi_source=linkShare"
+                                                        target="_blank" aria-expanded="true">Acompanhamento
+                                                        Manutenção</a>
+                                                </li>
+                                                <li>
+                                                    <a class="nav-link text-white"
+                                                        href="https://app.powerbi.com/links/x8Lh112DbC?ctid=162df80e-5f1b-4975-91f6-120d43809237&pbi_source=linkShare"
+                                                        target="_blank" aria-expanded="true">Manutenção Central</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- Quinto item menu -->
+                                <li class="nav-item my-sm-1 my-2 disabled">
+                                    <a class="nav-link text-white text-center text-sm-start" href="#sidemenu5"
+                                        data-bs-toggle="collapse">
+                                        <i class="fa-solid fa-truck"></i>
+                                        <span class="ms-2 d-none d-sm-inline">Operacional</span>
+                                        <i class="bi bi-chevron-right"></i>
+                                    </a>
+                                    <ul class="nav collapse ms-1 flex-column" id="sidemenu5">
+                                        <li class="nav-item">
+                                            <ul class="submenu " style="list-style-type: none;">
+                                                <li><a class="nav-link text-white"
+                                                        href="https://app.powerbi.com/Redirect?action=OpenReport&appId=eba17f89-d135-449e-b58f-3bcace9f4d88&reportObjectId=3bd4f2ce-ec70-4832-88f2-95f22c36ac5d&ctid=1f78a66c-6436-4836-a24a-ef1694a87081&reportPage=ReportSection86f117b19535c42fe981&pbi_source=appShareLink&portalSessionId=f32bb288-2e84-4e83-b551-534e92708510"
+                                                        target="_blank" aria-expanded="true">Infohand -
+                                                        Acompanhamento
+                                                        Diários das Operações</a></li>
+                                                <li><a class="nav-link text-white"
+                                                        href="https://app.powerbi.com/reportEmbed?reportId=de3f5f17-fb10-40e3-8211-5788615c9f65&autoAuth=true&ctid=4349ca3c-1e1f-4b00-87fb-f181a6e93e28"
+                                                        target="_blank" aria-expanded="true">Inlog - KM Planejado x
+                                                        Realizado</a></li>
+                                                <li><a class="nav-link text-white"
+                                                        href="https://app.powerbi.com/reportEmbed?reportId=76346c4e-77c3-4b84-9b4d-24b539872c10&autoAuth=true&ctid=4349ca3c-1e1f-4b00-87fb-f181a6e93e28"
+                                                        target="_blank" aria-expanded="true">Inlog - Viagens Fora da
+                                                        Faixa de Peso</a></li>
+                                                <li><a class="nav-link text-white"
+                                                        href="https://app.powerbi.com/reportEmbed?reportId=ea592ea3-2a9b-4944-b112-c3799a352638&autoAuth=true&ctid=4349ca3c-1e1f-4b00-87fb-f181a6e93e28"
+                                                        target="_blank" aria-expanded="true">Inlog - Telemetria</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
                                 </ul>
                             </div>
                             <div>
@@ -108,29 +155,35 @@
             </div>
             <div class="col-9 mt-4" id="div-logos">
 
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-5">
-                            <img src="../logo/corpus-preto-3.png" alt="" title="" width="80%" style="margin: 10px;">
-                        </div>
-                        <div class="col-5">
-                            <img src="../logo/corsam.png" alt="" title="" width="100%" style="margin: 10px;">
-                        </div>
-                        <div class="col-5">
-                            <img src="../logo/real-plast.png" alt="" title="" width="80%" style="margin: 10px;">
-                        </div>
-                        <div class="col-5">
-                            <img src="../logo/ecomark.png" alt="" title="" width="100%" style="margin: 10px;">
-                        </div>
+                <div class="container-fluid "">
+                    <div class=" row">
+                    <div class="col-5">
+                        <img src="../logo/corpus-preto-3.png" alt="" title="" width="80%" style="margin: 10px;">
+                    </div>
+                    <div class="col-5">
+                        <img src="../logo/corsam.png" alt="" title="" width="100%" style="margin: 10px;">
+                    </div>
+                    <div class="col-5">
+                        <img src="../logo/real-plast.png" alt="" title="" width="80%" style="margin: 10px;">
+                    </div>
+                    <div class="col-5">
+                        <img src="../logo/ecomark.png" alt="" title="" width="100%" style="margin: 10px;">
+                    </div>
+                    <div class="col-5">
+                        <img src="../logo/sotkon.jpg" alt="" title="" width="60%" style="margin: 10px;">
+                    </div>
+                    <div class="col-5">
+                        <img src="../logo/cso.png" alt="" title="" width="70%" style="margin: 10px;">
                     </div>
                 </div>
-
-                
-
-                <!-- <div style="display: flex; align-items: center; justify-content: center; height: 5vh; margin: 0;"> -->
-                <!-- </div> -->
             </div>
+
+
+
+            <!-- <div style="display: flex; align-items: center; justify-content: center; height: 5vh; margin: 0;"> -->
+            <!-- </div> -->
         </div>
+    </div>
     </div>
 
 
@@ -145,9 +198,9 @@
 
 
 
-    
 
-    
+
+
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
