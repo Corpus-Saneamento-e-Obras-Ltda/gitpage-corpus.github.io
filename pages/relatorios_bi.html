@@ -173,7 +173,7 @@
                                 <li class="nav-item my-sm-1 my-2 disabled">
                                     <a class="nav-link text-white text-center text-sm-start" href="#sidemenu7"
                                         data-bs-toggle="collapse">
-                                        <i class="bi bi-binoculars-fill"></i>
+                                        <i class="fa-solid fa-binoculars" style="color: #f7f7f7;"></i>
                                         <span class="ms-2 d-none d-sm-inline">Inlog</span>
                                         <i class="bi bi-chevron-right"></i>
                                     </a>
@@ -288,7 +288,7 @@
         const menuItems = document.querySelectorAll(".nav-item");
 
         menuItems.forEach(function (menuItem) {
-            const icon = menuItem.querySelector(".bi bi-chevron");
+            const icon = menuItem.querySelector(".bi");
             let aberto = false; // variável para armazenar o estado do menu
 
             menuItem.addEventListener("click", function () {
