@@ -36,7 +36,7 @@
                                             data-bs-toggle="collapse">
                                             <i class="fa fa-table"></i>
                                             <span class="ms-2 d-none d-sm-inline">Gerencial</span>
-                                            <i class="bi bi-chevron-right"></i>
+                                            <i class="bi bi-chevron-right menu-chevron"></i>
                                         </a>
                                         <ul class="nav collapse ms-1 flex-column" id="sidemenu1">
                                             <ul class="submenu" style="list-style-type: disc; color: white;">
@@ -58,7 +58,7 @@
                                             data-bs-toggle="collapse">
                                             <i class="bi bi-piggy-bank-fill"></i>
                                             <span class="ms-2 d-none d-sm-inline">Orçamento</span>
-                                            <i class="bi bi-chevron-right"></i>
+                                            <i class="bi bi-chevron-right menu-chevron"></i>
                                         </a>
                                         <ul class="nav collapse ms-1 flex-column" id="sidemenu2">
                                             <ul class="submenu" style="list-style-type: disc; color: white;">
@@ -78,7 +78,7 @@
                                             data-bs-toggle="collapse">
                                             <i class="fa fa-user"></i>
                                             <span class="ms-2 d-none d-sm-inline">Pessoal</span>
-                                            <i class="bi bi-chevron-right"></i>
+                                            <i class="bi bi-chevron-right menu-chevron"></i>
                                         </a>
                                         <ul class="nav collapse ms-1 flex-column" id="sidemenu3">
                                             <ul class="submenu " style="list-style-type: disc; color: white;">
@@ -97,7 +97,7 @@
                                             data-bs-toggle="collapse">
                                             <i class="fa fa-wallet"></i>
                                             <span class="ms-2 d-none d-sm-inline">Serviços Privados</span>
-                                            <i class="bi bi-chevron-right "></i>
+                                            <i class="bi bi-chevron-right menu-chevron"></i>
                                         </a>
                                         <ul class="nav collapse ms-1 flex-column" id="sidemenu4">
                                             <ul class="submenu " style="list-style-type: disc; color: white;">
@@ -121,7 +121,7 @@
                                             data-bs-toggle="collapse">
                                             <i class="fa fa-screwdriver-wrench"></i>
                                             <span class="ms-2 d-none d-sm-inline">Manutenção</span>
-                                            <i class="bi bi-chevron-right"></i>
+                                            <i class="bi bi-chevron-right menu-chevron"></i>
                                         </a>
                                         <ul class="nav collapse ms-1 flex-column" id="sidemenu5">
                                             <li class="nav-item">
@@ -175,7 +175,7 @@
                                             data-bs-toggle="collapse">
                                             <i class="fa-solid fa-truck"></i>
                                             <span class="ms-2 d-none d-sm-inline">Operacional</span>
-                                            <i class="bi bi-chevron-right"></i>
+                                            <i class="bi bi-chevron-right menu-chevron"></i>
                                         </a>
                                         <ul class="nav collapse ms-1 flex-column" id="sidemenu6">
                                             <li class="nav-item">
@@ -200,7 +200,7 @@
                                             data-bs-toggle="collapse">
                                             <i class="fa-solid fa-heart-pulse"></i>
                                             <span class="ms-2 d-none d-sm-inline">SQMA</span>
-                                            <i class="bi bi-chevron-right"></i>
+                                            <i class="bi bi-chevron-right menu-chevron"></i>
                                         </a>
                                         <ul class="nav collapse ms-1 flex-column" id="sidemenu7">
                                             <li class="nav-item">
@@ -220,7 +220,7 @@
                                             data-bs-toggle="collapse">
                                             <i class="fa-solid fa-binoculars" style="color: #f7f7f7;"></i>
                                             <span class="ms-2 d-none d-sm-inline">Inlog</span>
-                                            <i class="bi bi-chevron-right"></i>
+                                            <i class="bi bi-chevron-right menu-chevron"></i>
                                         </a>
                                         <ul class="nav collapse ms-1 flex-column" id="sidemenu8">
                                             <li class="nav-item">
@@ -326,7 +326,7 @@
         const menuItems = document.querySelectorAll(".nav-item");
 
         menuItems.forEach(function (menuItem) {
-            const icon = menuItem.querySelector(".bi");
+            const icon = menuItem.querySelector(".menu-chevron");
             let aberto = false; // variável para armazenar o estado do menu
 
             menuItem.addEventListener("click", function () {
