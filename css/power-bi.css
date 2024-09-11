@@ -108,3 +108,6 @@ i {
     position: relative;
   }
   
+.no-dot {
+    list-style-type: none;
+}
